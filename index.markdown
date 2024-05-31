@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+## Maggie Oates
+Maggie Oates is a lorem ipsum catchy quotes go here that describe all my work. Put a cute button here that rotates my title. 
+
