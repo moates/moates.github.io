@@ -27,11 +27,21 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cheerioates
 github_username:  moates
 
-
 header_pages:
   - portfolio.md
   - blog.md
   - about.markdown
+
+
+# Show excerpts on home page
+show_excerpts: true
+
+
+# Minima date formmat
+minima:
+  date_format: "%b %-d, %Y"
+
+# Collections. @TODO
 
 
 # Build settings
