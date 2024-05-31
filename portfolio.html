@@ -1,0 +1,22 @@
+---
+title: Portfolio
+layout: page
+permalink: /portfolio/
+---
+
+<h2> IN THE MEDIA </h2>
+<ul>
+{% for media in site.data.media %}
+<li> {{ media.publisher }} : <a href={{media.pub_link}}> {{ media.pub_title }}</a> 
+ {% endfor %}
+</ul>
+
+
+<h2> EXHIBITIONS, PERFORMANCES </h2>
+
+{% for media in site.data.media %}
+<li> {{ media.publisher }} : <a href={{media.pub_link}}> {{ media.pub_title }}</a> 
+ {% endfor %}
+</ul>
+
+

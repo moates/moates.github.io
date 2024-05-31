@@ -28,13 +28,13 @@ twitter_username: cheerioates
 github_username:  moates
 
 header_pages:
-  - portfolio.md
-  - blog.md
+  - portfolio.html
+  - blog.html
   - about.markdown
 
 
 # Show excerpts on home page
-show_excerpts: true
+show_excerpts: false
 
 
 # Minima date formmat

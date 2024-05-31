@@ -1,0 +1,78 @@
+---
+layout: post
+title: Testing & Pooping at Google
+date: '2014-12-09T23:22:00.003-08:00'
+author: Maggie Oates
+tags:
+- tech
+- testing
+- test
+- Google
+modified_time: '2014-12-09T23:22:50.310-08:00'
+thumbnail: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiitf_sNazOt9xHW15WAqpF0aVFFAt7ghYCoXy58lg6vRY_TXn24ItJt5IH8DwuMFS9oiL-HXQuNSuqixjUKzGWkGNmQ4Fz8_aCryMOyEk9c3LvW4d_-A5h88Ond_8OvBFBFyTZEbgTnWw/s72-c/liberty.png
+blogger_id: tag:blogger.com,1999:blog-561384950850996614.post-3312481500198088606
+blogger_orig_url: https://gramblingsofagal.blogspot.com/2014/12/testing-pooping-at-google.html
+---
+
+<h4>
+<span style="font-family: Courier New, Courier, monospace;">"Testers are paid to break stuff."</span></h4>
+<span style="font-family: Courier New, Courier, monospace;">I've heard this line a dozen times from a dozen different people, most recently during a presentation by IU alum and current Googler Mark Meiss. Breaking things is fun, so I decided to look into Testing more, specifically Test at Google.</span><br />
+<span style="font-family: Courier New, Courier, monospace;"><br />
+Google has a <a href="http://googletesting.blogspot.com/">great blog on testing there</a>&nbsp;and has an especially nice <a href="http://googletesting.blogspot.com/2013/12/the-google-test-and-development.html">overview series</a>&nbsp;of Google testing, but I'd like to share a few interesting or quirky things I've learned in the past week about Test at Google.</span><br />
+<span style="font-family: Courier New, Courier, monospace;"><br />
+<br />
+</span><br />
+<h3>
+<span style="font-family: Courier New, Courier, monospace;">Learn &amp; Poop</span></h3>
+<div>
+<span style="font-family: Courier New, Courier, monospace;">Don't you just love sitting down on that porcelain throne and taking a good...look at the testing tips on the walls? Google has a program called Testing on the Toilet (TotT). Bathroom stalls are plastered with best practices and tricks. Sure, it's&nbsp;<a href="http://googletesting.blogspot.com/2007/01/introducing-testing-on-toilet.html">old news</a>&nbsp;(the program started back in 2007),&nbsp;but it's still interesting and effective.* I'm also struck that the program is a good reflection of testing in general- like a bathroom, Test isn't exactly sexy, but without it things at scale would get real shitty real fast.</span></div>
+<div>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span></div>
+<div>
+<span style="font-family: Courier New, Courier, monospace;">The topics range from simple things like <a href="http://googletesting.blogspot.com/2014/10/testing-on-toilet-writing-descriptive.html">effectively naming tests</a>&nbsp;to more technical specifics for <a href="http://googletesting.blogspot.com/2009/08/tott-testing-gwt-without-gwttest.html">Web Toolkit</a>, but nearly all are very accessible concepts if you know basic coding. So next time you're "backing the bus outta the garage" (ew/lol), I recommend&nbsp;scrolling through the <a href="http://googletesting.blogspot.com/search/label/TotT">TotT tag</a>&nbsp;on your phone to pick up a few tips.&nbsp;</span></div>
+<div>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span></div>
+<h3>
+<span style="font-family: Courier New, Courier, monospace;">SET vs TE</span></h3>
+<h3>
+<span style="font-family: Courier New, Courier, monospace;">(Software Engineer in Test vs Test Engineer)</span></h3>
+<div>
+<span style="font-family: Courier New, Courier, monospace;">A nuance I wasn't previously aware of was the fact that Software Engineer in Test and Test Engineer are not synonyms. From what I understand, the two roles can be very similar, but do have different focuses. Pulled from <a href="http://googletesting.blogspot.com/2012/09/conversation-with-test-engineer.html">this 2012 interview</a> with a Google TE;</span></div>
+<blockquote class="tr_bq">
+<span style="background-color: white; color: #444444; font-size: 14px; line-height: 19.6000003814697px;"><i><span style="font-family: Courier New, Courier, monospace;">As a Test Engineer, you’re more focused on the overall quality of the product and speed of releases, while a Software Engineer in Test might focus more on test frameworks, automation, and refactoring code for testability. I think of the difference as more of a shift in focus and not capabilities, since both roles at Google need to be able to write production quality code. Example test engineering tasks I worked on are introducing an automated release process, identifying areas for the team to improve code coverage, and reducing the manual steps needed to validate data correctness.</span></i></span></blockquote>
+<span style="font-family: Courier New, Courier, monospace;">If it matters to you, looking at the oh-so-scientific Glassdoor pages gives salary estimates for each.&nbsp;<a href="http://www.glassdoor.com/Salary/Google-Software-Engineer-In-Test-Salaries-E9079_D_KO7,32.htm">SET's</a>&nbsp;and <a href="http://www.glassdoor.com/Salary/Google-Test-Engineer-Salaries-E9079_D_KO7,20.htm">TE</a>'s&nbsp;make roughly the same&nbsp;<span style="background-color: white;">$111,000</span><span style="background-color: white; line-height: 19px;">&nbsp;</span>and $108,700 respectively at the time of this writing. And according to <a href="http://googletesting.blogspot.com/2011/05/how-google-tests-software-break-for-q.html">this</a> Google Testing post, the&nbsp;opportunities&nbsp;for career advancement were similar.</span><br />
+<div>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span></div>
+<div>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span></div>
+<h3>
+<span style="font-family: Courier New, Courier, monospace;">Orbs</span></h3>
+<div>
+<span style="font-family: Courier New, Courier, monospace;">In the early 2000s, different Google teams tried out different ways of monitoring their test builds to make sure everything was running smoothly. Each team has a centralized, web dashboard for their builds. The centralization is nice but is not a particularly vigorous. As <a href="https://mike-bland.com/">Mike Bland</a>&nbsp;pointed out in a <i>really</i>&nbsp;interesting&nbsp;<a href="https://mike-bland.com/2012/06/21/chris-jay-continuous-build.html#cj-r4">post</a> on the development of builds at Google,</span><br />
+<blockquote class="tr_bq">
+<span style="font-family: Courier New, Courier, monospace;"><span style="background-color: white; font-size: 15px; line-height: 22.0109996795654px; text-align: justify;">"...</span><span style="background-color: white; font-size: 15px; line-height: 22.0109996795654px; text-align: justify;"><i>a build system’s value is proportional to the rapidity with which a team can identify breakages and fix them, and having every engineer keep a web page open and refresh it all the time doesn’t scale."</i></span></span></blockquote>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; text-align: right;"><tbody>
+<tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiitf_sNazOt9xHW15WAqpF0aVFFAt7ghYCoXy58lg6vRY_TXn24ItJt5IH8DwuMFS9oiL-HXQuNSuqixjUKzGWkGNmQ4Fz8_aCryMOyEk9c3LvW4d_-A5h88Ond_8OvBFBFyTZEbgTnWw/s1600/liberty.png" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><span style="font-family: Courier New, Courier, monospace;"><img alt="A green and brown Statue of Liberty figurine has its torch replaced with a small orb that glows green." border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiitf_sNazOt9xHW15WAqpF0aVFFAt7ghYCoXy58lg6vRY_TXn24ItJt5IH8DwuMFS9oiL-HXQuNSuqixjUKzGWkGNmQ4Fz8_aCryMOyEk9c3LvW4d_-A5h88Ond_8OvBFBFyTZEbgTnWw/s1600/liberty.png" height="400" title="" width="191" /></span></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;"><span style="font-family: Courier New, Courier, monospace;">"Statue of LORBerty"&nbsp;taken from <br />the <a href="http://googletesting.blogspot.com/2014/01/the-google-test-and-development_21.html">Google Testing Blog</a></span></td></tr>
+</tbody></table>
+<span style="font-family: Courier New, Courier, monospace;">So a few teams turned to casual, at-a-glance methods of identifying build fail moments of "Oh shoot, we done messed up." Bland talks about teams using a literal traffic light, browser plugins, and (his project) Ambient orbs.&nbsp;</span><br />
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><a href="http://www.ambientdevices.com/about/about-the-company">Ambient</a> builds devices that center around relaying information in an effortless way. Bland threw together some scripts that used one of their products, Orb, to change color based on the status of a build. Hence the birth of the Statue of LORBerty, providing liberty and justice and peace of mind to testers everywhere.</span><br />
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span></div>
+<div>
+<span style="font-family: Courier New, Courier, monospace;"><br /></span></div>
+<span style="font-family: Courier New, Courier, monospace;">*</span><span style="font-family: 'Courier New', Courier, monospace;">[Funnily enough, we use the same technique for event advertising or &nbsp;awareness campaigns pretty frequently in the residence halls at IU. Communal bathrooms are places that receive high traffic with pretty captive audiences. Other places I like are inside elevators or next to clocks in lecture halls. Flyering bulletin boards just doesn't cut it.]</span>

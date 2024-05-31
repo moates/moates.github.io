@@ -1,0 +1,80 @@
+---
+layout: post
+title: JSON and & "Good, not Evil"
+date: '2018-04-05T16:38:00.003-07:00'
+author: Maggie Oates
+tags:
+- ethical-license
+- tech
+modified_time: '2021-02-21T09:22:57.891-08:00'
+blogger_id: tag:blogger.com,1999:blog-561384950850996614.post-3376710858092322058
+blogger_orig_url: https://gramblingsofagal.blogspot.com/2018/04/json-and-good-not-evil.html
+---
+
+The <a href="https://web.archive.org/web/20060307101509/http://www.json.org/license.html">JSON license</a> is apparently infamous in the FOSS community for its inclusion of a moral clause. The license was nearly identical to the classic MIT License, except the one line,<br />
+<blockquote class="tr_bq">
+<span style="font-size: large;">The Software shall be used for Good, not Evil.</span></blockquote>
+This line has persisted in the license since 2002 when Douglas Crockford originally penned it, and not without controversy. This clause prevents the license from being considered a free license, since it places restrictions on use. That has consequences for artifacts licensed under JSON. Below are some highlights of its fascinating, contentious past and present.<br />
+<br />
+<h3>
+Google Code stops hosting</h3>
+<div>
+Around 2009, Google Code (at the time a host for open-source projects) reportedly stopped hosting projects that used the license. Ryan Grove <a href="https://web.archive.org/web/20180227153345/https://wonko.com/post/jsmin-isnt-welcome-on-google-code">described</a> how he chose to migrate his project, JSMin, to Github.&nbsp;</div>
+<div>
+<br /></div>
+<div>
+In 2010, it would appear that the Google Android team <a href="https://web.archive.org/web/20180405235926/https://android.googlesource.com/platform/libcore/+log/master/json">replaced</a> JSON.org implementations in core Android by writing them from scratch, with the commit "Removing the non-free org.json implementation."</div>
+<h3>
+Debian rejects use</h3>
+<div>
+In 2010, the debian-legal <a href="https://web.archive.org/web/20100504174537/http://www.mail-archive.com:80/debian-legal@lists.debian.org/info.html">listserv</a>&nbsp;re-visited the topic of whether JSON.org software can be included in Debian's free distributions. Thomas Koch <a href="https://web.archive.org/web/20100420192150/http://www.mail-archive.com:80/debian-legal@lists.debian.org/msg40717.html">reported</a>&nbsp;he emailed Crockford about the line and received the response,</div>
+<blockquote class="tr_bq">
+<i>If you cannot tolerate the license, then do not use the software.</i></blockquote>
+The opinion of the listserv, <a href="https://web.archive.org/web/20100420235401/http://www.mail-archive.com:80/debian-legal@lists.debian.org/msg40718.html">summarized by&nbsp;</a><span style="background-color: white;"><a href="https://web.archive.org/web/20100420235401/http://www.mail-archive.com:80/debian-legal@lists.debian.org/msg40718.html">Josselin Mouette</a>, was</span><br />
+<blockquote class="tr_bq">
+<i>Definitely non-free, and the author’s clarification removes any doubt.</i></blockquote>
+<br />
+<h3>
+Crockford &amp; "Evil" IBM</h3>
+<div>
+In a fascinating<a href="https://www.youtube.com/watch?v=-C-JoyNuQJs"> talk for Yahoo</a> on the history of JSON (Trivia: the first JSON 'Hello world' message failed), Crockford discussed granting a license change. In a short section on the history of the license he <a href="https://youtu.be/-C-JoyNuQJs?t=2392">says</a>,&nbsp;</div>
+<blockquote class="tr_bq">
+<i>this was late in 2002, you know, we just started the war on terror and you know we were going after the evildoers with the president and the vice president and I felt like I need to do my part. So I added one more line to my license was that the software shall be used for good not evil.</i></blockquote>
+&nbsp;However, he also describes how he's frequently approached by individuals and companies wanting to use his license. After IBM asked for a separate license, he allowed IBM to use his software under the JSON license, writing,<br />
+<blockquote class="tr_bq">
+<i>I give permission to IBM, its customers, partners, and minions, to use JSLint for evil.</i></blockquote>
+Apparently that was enough for IBM lawyers in 2011. So Crockford has, in fact, granted adjusted licenses to some large organizations like IBM.<br />
+<br />
+<h3>
+Crockford &amp; Actual Evil</h3>
+In 2012, compelled by a conference talk that covered how "the regime in Syria was using open source software in its efforts to track down and murder anyone with the courage to oppose the evil government," Crockford <a href="https://web.archive.org/web/20180112113613/https://plus.google.com/118095276221607585885/posts/13shsS2bAEY">posted on Google+&nbsp;</a>,<br />
+<blockquote class="tr_bq">
+<i>My very, very, very small part in this is that I include The software shall be used for good, not evil in my licenses. It is not effective at all, but it at least states my intention. It is quite controversial in the open source community because it is claimed that it restricts a specific field of use (specifically, evil), and that software cannot be considered free unless its license permits it to be used in the investigation, torture, and murder of patriots who dare to resist tyrants.</i></blockquote>
+&nbsp;The line, "It is not effective at all, but it at least states my intention," brings forth questions about the tensions between <a href="https://plato.stanford.edu/entries/intention/">intention</a>&nbsp;and impact. I'd be curious what <a href="https://web.archive.org/web/20171004093756/http://people.morrisville.edu/~galuskwj/oneill.html">Kant thinks</a> about this case study.<br />
+<br />
+<h3>
+&nbsp;Github &amp; project bug reports</h3>
+<div>
+Across Github and other software hosts, you can find references and arguments to the license in bug reports and feature requests.&nbsp;</div>
+<div>
+<br />
+In 2013, @blickly <a href="https://web.archive.org/web/20171225172321/https://github.com/jshint/jshint/issues/1234">opened the issue</a> "json.org is not free software #187" on the popular jshint project for Javascript linting and hints. This issue has 79 comments and <a href="https://github.com/jshint/jshint/issues/1234">remains unresolved</a> as of this writing. In September 2017, user @eclipseo commented that the issue was "preventing us from including it in Fedora."</div>
+<div>
+<br /></div>
+<div>
+In contrast, the open project management system Trac<a href="https://web.archive.org/web/20151001121323/https://trac.transmissionbt.com/ticket/5131"> resolved their use of JSON software</a> in less than two months in 2012. They simply replaced the parser they were using.&nbsp;</div>
+<br />
+<h3>
+Change.org petition</h3>
+<div>
+2014, Thomas Koch (yes, the same Koch from Debian) begins a <a href="https://web.archive.org/web/20180405223008/https://www.change.org/p/douglas-crockford-remove-the-not-evil-clause-from-your-license-because-it-is-evil-itself">Change.org petition</a>&nbsp;to get Crockford to remove that line from its license with the reasoning</div>
+<blockquote class="tr_bq">
+<i>Many free software activists are also active for good causes in other areas than software. The non-evil clause costs them time and nerves and distracts them from doing good.</i></blockquote>
+The petition got 35 signatures.<br />
+<br />
+<h3>
+Apache doesn't get the joke</h3>
+<div>
+In 2016, Apache <a href="http://mail-archives.apache.org/mod_mbox/www-legal-discuss/200806.mbox/%3C510143ac0806060808redbe037r88287b1fcf1e236a@mail.gmail.com%3E">reversed</a>&nbsp;<a href="https://web.archive.org/web/20180401033226/https://www.apache.org/legal/resolved#json">(archived</a>&nbsp;text) its prior 8-year decision to use JSON-licensed software in its products. Originally, circa 2008, the legal-discuss listserv's thread indicated that "Good, not Evil" was, for the most part, a joke rather than a legal concern. Henri Yandell wrote,&nbsp;</div>
+<blockquote class="tr_bq">
+<i>It's a joke clause in my opinion.</i></blockquote>
