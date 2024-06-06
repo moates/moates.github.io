@@ -4,6 +4,16 @@ layout: page
 permalink: /portfolio/
 ---
 
+
+<h2> PROJECTS </h2>
+<ul>
+{% for post in site.categories.projects %}
+	<li> {{ post.date }} <a href="{{ post.url }}">{{ post.title }} </a></li>
+	<p>Tags: {{ post.tags }}</p>
+{% endfor %}
+</ul>
+ 
+
 <h2> IN THE MEDIA </h2>
 <ul>
 {% for media in site.data.media %}
@@ -18,5 +28,4 @@ permalink: /portfolio/
 <li> {{ media.publisher }} : <a href={{media.pub_link}}> {{ media.pub_title }}</a> 
  {% endfor %}
 </ul>
-
 
