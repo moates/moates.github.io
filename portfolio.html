@@ -4,6 +4,14 @@ layout: page
 permalink: /portfolio/
 ---
 
+<h2> PROJECT AREAS </h2>
+{% for tag in site.data.project_areas %}
+<a href=""><button> {{ tag.pretty }} </button></a>
+{% endfor %}
+
+
+
+
 
 <h2> PROJECTS </h2>
 <ul>

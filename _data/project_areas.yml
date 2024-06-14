@@ -1,0 +1,28 @@
+  - tag: immersive experience
+    pretty: "Experience Design"
+    url: experience.html
+
+  - tag: creative publishing
+    pretty: "Creative Publishing"
+    url: creativepublishing.html
+  
+  - tag: technical
+    pretty: "Technical"
+    url: technical.html
+  
+  - tag: experiment
+    pretty: Experiments, WIP
+    url: experiment.html
+  
+  - tag: advocacy
+    pretty: Advocacy
+    url: advocacy.html
+  
+  - tag: performance
+    pretty: Performance
+    url: performance.html
+
+  - tag: writing
+    pretty: Writing
+    url: writing.html
+  
